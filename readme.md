@@ -535,6 +535,21 @@ Public-key/asymmetric cryptography signing and validating
 go run ppk-crypto.go
 ```
 
+Command Line Arguments Golang Example
+We can get argument values though command line by specifying the operator '-' with the name of the argument and the value to be set. E.g. -env=qa
+
+```Shell
+go run command_line_arguments.go
+go run command_line_arguments.go -env=qa -consumer=true
+```
+
+Cron Golang Example
+We can trigger a function at a particular time through cron 
+
+```Shell
+go run cron.go
+```
+
 ## Compile
 
 One great aspect of Golang is, that you can start go applications via ```go run name.go```, but also compile it to an executable with ```go build name.go```. After that you can start the compiled version which starts much faster.
@@ -542,7 +557,7 @@ If you start fibonacci.go and the compiled version you will notice, that the las
 
 ## License
 
-Copyright © 2018 Simon Waldherr
+Copyright © 2019 Simon Waldherr
 Dual-licensed. See the [LICENSE](https://github.com/SimonWaldherr/golang-examples/blob/master/LICENSE) file for details.
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSimonWaldherr%2Fgolang-examples.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSimonWaldherr%2Fgolang-examples?ref=badge_large)
